@@ -1,5 +1,8 @@
 {
   "expo": {
+    "experiments": {
+      "reactCompiler": true
+    },
     "name": "eau-de-france",
     "slug": "eau-de-france",
     "version": "1.0.0",
