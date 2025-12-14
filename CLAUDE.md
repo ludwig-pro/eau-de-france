@@ -13,6 +13,9 @@ When working on this project, **always consult the official Expo documentation**
 - **https://docs.expo.dev/llms-eas.txt** - Complete EAS (Expo Application Services) documentation
 - **https://docs.expo.dev/llms-sdk.txt** - Complete Expo SDK documentation
 - **https://reactnative.dev/docs/getting-started** - Complete React Native documentation
+- **https://www.unistyl.es/llms.txt** - Index of Unistyles documentation
+- **https://www.unistyl.es/llms-small.txt** - Concise Unistyles documentation
+- **https://www.unistyl.es/llms-full.txt** - Complete Unistyles documentation for styling
 
 These documentation files are specifically formatted for AI agents and should be your **primary reference** for:
 
@@ -21,6 +24,7 @@ These documentation files are specifically formatted for AI agents and should be
 - EAS Build, Submit, and Update workflows
 - Expo SDK modules and their usage
 - Development and deployment processes
+- Unistyles styling patterns and theming
 
 ## Essential Commands
 
@@ -73,6 +77,7 @@ npx expo export -p web && npx eas-cli@latest deploy   # Deploy web to EAS Hostin
 - **Animations**: `react-native-reanimated` for performant animations on native thread
 - **Gestures**: `react-native-gesture-handler` for native gesture recognition
 - **Storage**: Use `expo-sqlite` for persistent storage, `expo-sqlite/kv-store` for simple key-value storage
+- **Styling**: `react-native-unistyles` for styling (see documentation below)
 
 ## Debugging & Development Tools
 
@@ -110,6 +115,7 @@ When working on this project:
    - For general Expo questions: https://docs.expo.dev/llms-full.txt
    - For EAS/deployment questions: https://docs.expo.dev/llms-eas.txt
    - For SDK/API questions: https://docs.expo.dev/llms-sdk.txt
+   - For styling/theming questions: https://www.unistyl.es/llms-full.txt
 
 2. **Understand before implementing**: Read the relevant docs section before writing code
 
