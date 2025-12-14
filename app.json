@@ -30,6 +30,18 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro",
       "output": "single"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "68dfc9ae-20d6-46b8-a63a-6fc000fe661d"
+      }
+    },
+    "owner": "ludwig-pro",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/68dfc9ae-20d6-46b8-a63a-6fc000fe661d"
     }
   }
 }
