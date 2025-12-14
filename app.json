@@ -38,7 +38,7 @@
     },
     "owner": "ludwig-pro",
     "runtimeVersion": {
-      "policy": "appVersion"
+      "policy": "fingerprint"
     },
     "updates": {
       "url": "https://u.expo.dev/68dfc9ae-20d6-46b8-a63a-6fc000fe661d"
