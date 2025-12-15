@@ -5,6 +5,7 @@
     },
     "name": "eau-de-france",
     "slug": "eau-de-france",
+    "scheme": "eaudefrance",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -42,6 +43,9 @@
     },
     "updates": {
       "url": "https://u.expo.dev/68dfc9ae-20d6-46b8-a63a-6fc000fe661d"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
