@@ -6,6 +6,7 @@
       "name": "eau-de-france",
       "dependencies": {
         "@expo/metro-runtime": "~6.1.2",
+        "@legendapp/state": "^3.0.0-beta.42",
         "babel-plugin-react-compiler": "^19.0.0-beta-af1b7da-20250417",
         "expo": "~54.0.29",
         "expo-constants": "~18.0.12",
@@ -19,6 +20,7 @@
         "react-native": "0.81.5",
         "react-native-edge-to-edge": "^1.7.0",
         "react-native-gesture-handler": "~2.28.0",
+        "react-native-mmkv": "^4.1.0",
         "react-native-nitro-modules": "^0.31.10",
         "react-native-safe-area-context": "~5.6.0",
         "react-native-screens": "~4.16.0",
@@ -344,6 +346,8 @@
     "@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.5", "", {}, "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og=="],
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.31", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="],
+
+    "@legendapp/state": ["@legendapp/state@3.0.0-beta.42", "", { "dependencies": { "use-sync-external-store": "^1.2.2" }, "peerDependencies": { "expo-sqlite": "^15.0.0" }, "optionalPeers": ["expo-sqlite"] }, "sha512-KoGZrBdbHG5gMzP4NjKRsGZgTyy6pG+HBSyKrniL6NLsjG8L+hbYC21tIfdMvt1Xks1kTRAaqevatc4C7Yn/Uw=="],
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@0.2.12", "", { "dependencies": { "@emnapi/core": "^1.4.3", "@emnapi/runtime": "^1.4.3", "@tybys/wasm-util": "^0.10.0" } }, "sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ=="],
 
@@ -1368,6 +1372,8 @@
     "react-native-gesture-handler": ["react-native-gesture-handler@2.28.0", "", { "dependencies": { "@egjs/hammerjs": "^2.0.17", "hoist-non-react-statics": "^3.3.0", "invariant": "^2.2.4" }, "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-0msfJ1vRxXKVgTgvL+1ZOoYw3/0z1R+Ked0+udoJhyplC2jbVKIJ8Z1bzWdpQRCV3QcQ87Op0zJVE5DhKK2A0A=="],
 
     "react-native-is-edge-to-edge": ["react-native-is-edge-to-edge@1.2.1", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-FLbPWl/MyYQWz+KwqOZsSyj2JmLKglHatd3xLZWskXOpRaio4LfEDEz8E/A6uD8QoTHW6Aobw1jbEwK7KMgR7Q=="],
+
+    "react-native-mmkv": ["react-native-mmkv@4.1.0", "", { "peerDependencies": { "react": "*", "react-native": "*", "react-native-nitro-modules": "*" } }, "sha512-ia76WnU6dkLZxFkSSflxqFgHT2pIaML763aucEu7nMglF41oEWTdTtBu0o8a1cxbhZOaONk6KF8RQp5fLvPitA=="],
 
     "react-native-nitro-modules": ["react-native-nitro-modules@0.31.10", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-hcvjTu9YJE9fMmnAUvhG8CxvYLpOuMQ/2eyi/S6GyrecezF6Rmk/uRQEL6v09BRFWA/xRVZNQVulQPS+2HS3mQ=="],
 

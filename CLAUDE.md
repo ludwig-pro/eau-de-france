@@ -28,6 +28,8 @@ When working on this project, **always consult the official Expo documentation**
 - **https://www.unistyl.es/llms.txt** - Index of Unistyles documentation
 - **https://www.unistyl.es/llms-small.txt** - Concise Unistyles documentation
 - **https://www.unistyl.es/llms-full.txt** - Complete Unistyles documentation for styling
+- **https://legendapp.com/open-source/state/v3/llms.txt** - Index of Legend State documentation
+- **https://legendapp.com/open-source/state/v3/llms-full.txt** - Complete Legend State documentation for state management
 
 These documentation files are specifically formatted for AI agents and should be your **primary reference** for:
 
@@ -37,6 +39,7 @@ These documentation files are specifically formatted for AI agents and should be
 - Expo SDK modules and their usage
 - Development and deployment processes
 - Unistyles styling patterns and theming
+- Legend State reactive state management and persistence
 
 ## Essential Commands
 
@@ -88,6 +91,7 @@ npx expo export -p web && npx eas-cli@latest deploy   # Deploy web to EAS Hostin
 - **Images**: `expo-image` for optimized image handling and caching
 - **Animations**: `react-native-reanimated` for performant animations on native thread
 - **Gestures**: `react-native-gesture-handler` for native gesture recognition
+- **State Management**: `@legendapp/state` for reactive state with persistence
 - **Storage**: Use `expo-sqlite` for persistent storage, `expo-sqlite/kv-store` for simple key-value storage
 - **Styling**: `react-native-unistyles` for styling (see documentation below)
 
@@ -128,6 +132,7 @@ When working on this project:
    - For EAS/deployment questions: https://docs.expo.dev/llms-eas.txt
    - For SDK/API questions: https://docs.expo.dev/llms-sdk.txt
    - For styling/theming questions: https://www.unistyl.es/llms-full.txt
+   - For state management questions: https://legendapp.com/open-source/state/v3/llms-full.txt
 
 2. **Understand before implementing**: Read the relevant docs section before writing code
 
