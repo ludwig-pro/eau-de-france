@@ -1,5 +1,5 @@
-import { TextInput, StyleSheet, type TextInputProps } from "react-native";
-import { colors, spacing, radii, typography } from "@/design-system";
+import { TextInput, type TextInputProps } from "react-native";
+import { StyleSheet, useUnistyles } from "react-native-unistyles";
 
 interface SearchInputProps extends Omit<TextInputProps, "style"> {
   value: string;
@@ -12,26 +12,28 @@ export function SearchInput({
   placeholder = "Rechercher...",
   ...props
 }: SearchInputProps) {
+  const { theme } = useUnistyles();
+
   return (
     <TextInput
       value={value}
       onChangeText={onChangeText}
       placeholder={placeholder}
-      placeholderTextColor={colors.textTertiary}
+      placeholderTextColor={theme.colors.textTertiary}
       style={styles.input}
       {...props}
     />
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   input: {
-    padding: spacing.md,
+    padding: theme.spacing.md,
     borderWidth: 1,
-    borderColor: colors.borderLight,
-    borderRadius: radii.md,
-    fontSize: typography.size.md,
-    backgroundColor: colors.backgroundTertiary,
-    color: colors.text,
+    borderColor: theme.colors.borderLight,
+    borderRadius: theme.radii.md,
+    fontSize: theme.typography.size.md,
+    backgroundColor: theme.colors.backgroundTertiary,
+    color: theme.colors.text,
   },
-});
+}));

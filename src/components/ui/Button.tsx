@@ -1,5 +1,5 @@
-import { Pressable, Text, StyleSheet, type ViewStyle } from "react-native";
-import { colors, spacing, radii, typography } from "@/design-system";
+import { Pressable, Text, type ViewStyle } from "react-native";
+import { StyleSheet } from "react-native-unistyles";
 
 type ButtonVariant = "primary" | "secondary" | "ghost";
 type ButtonSize = "sm" | "md" | "lg";
@@ -47,21 +47,21 @@ export function Button({
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   base: {
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: radii.md,
+    borderRadius: theme.radii.md,
   },
 
   // Variants
   primary: {
-    backgroundColor: colors.primary,
+    backgroundColor: theme.colors.primary,
   },
   secondary: {
-    backgroundColor: colors.backgroundSecondary,
+    backgroundColor: theme.colors.backgroundSecondary,
     borderWidth: 1,
-    borderColor: colors.border,
+    borderColor: theme.colors.border,
   },
   ghost: {
     backgroundColor: "transparent",
@@ -69,16 +69,16 @@ const styles = StyleSheet.create({
 
   // Sizes
   size_sm: {
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm,
+    paddingHorizontal: theme.spacing.md,
+    paddingVertical: theme.spacing.sm,
   },
   size_md: {
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
+    paddingHorizontal: theme.spacing.lg,
+    paddingVertical: theme.spacing.md,
   },
   size_lg: {
-    paddingHorizontal: spacing.xl,
-    paddingVertical: spacing.lg,
+    paddingHorizontal: theme.spacing.xl,
+    paddingVertical: theme.spacing.lg,
   },
 
   // States
@@ -91,26 +91,26 @@ const styles = StyleSheet.create({
 
   // Text
   text: {
-    fontWeight: typography.weight.semibold,
+    fontWeight: theme.typography.weight.semibold,
   },
   text_primary: {
-    color: colors.white,
+    color: theme.colors.white,
   },
   text_secondary: {
-    color: colors.text,
+    color: theme.colors.text,
   },
   text_ghost: {
-    color: colors.primary,
+    color: theme.colors.primary,
   },
 
   // Text sizes
   textSize_sm: {
-    fontSize: typography.size.sm,
+    fontSize: theme.typography.size.sm,
   },
   textSize_md: {
-    fontSize: typography.size.md,
+    fontSize: theme.typography.size.md,
   },
   textSize_lg: {
-    fontSize: typography.size.lg,
+    fontSize: theme.typography.size.lg,
   },
-});
+}));

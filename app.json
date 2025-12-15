@@ -17,7 +17,12 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ludwigpro.eaudefrance",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "appleTeamId": "3GMN5HK6R6"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,7 +30,8 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ludwigpro.eaudefrance"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -45,7 +51,8 @@
       "url": "https://u.expo.dev/68dfc9ae-20d6-46b8-a63a-6fc000fe661d"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "react-native-edge-to-edge"
     ]
   }
 }

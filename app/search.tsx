@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import { useState } from "react";
 import { Screen, SearchInput } from "@/components/ui";
-import { colors, typography } from "@/design-system";
+import { StyleSheet } from "react-native-unistyles";
 
 export default function SearchScreen() {
   const [query, setQuery] = useState("");
@@ -24,15 +24,15 @@ export default function SearchScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   results: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
   },
   hint: {
-    color: colors.textTertiary,
-    fontSize: typography.size.sm,
+    color: theme.colors.textTertiary,
+    fontSize: theme.typography.size.sm,
     textAlign: "center",
   },
-});
+}));

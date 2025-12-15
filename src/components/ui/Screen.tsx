@@ -1,5 +1,6 @@
-import { View, StyleSheet, type ViewStyle, type ReactNode } from "react-native";
-import { colors, spacing } from "@/design-system";
+import type { ReactNode } from "react";
+import { View, type ViewStyle } from "react-native";
+import { StyleSheet } from "react-native-unistyles";
 
 interface ScreenProps {
   children: ReactNode;
@@ -15,12 +16,12 @@ export function Screen({ children, padding = true, style }: ScreenProps) {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: theme.colors.background,
   },
   padding: {
-    padding: spacing.lg,
+    padding: theme.spacing.lg,
   },
-});
+}));

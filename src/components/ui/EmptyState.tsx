@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, type ReactNode } from "react-native";
-import { colors, spacing, typography } from "@/design-system";
+import type { ReactNode } from "react";
+import { View, Text } from "react-native";
+import { StyleSheet } from "react-native-unistyles";
 
 interface EmptyStateProps {
   message: string;
@@ -15,19 +16,19 @@ export function EmptyState({ message, children }: EmptyStateProps) {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    padding: spacing.lg,
+    padding: theme.spacing.lg,
   },
   message: {
-    fontSize: typography.size.md,
-    color: colors.textSecondary,
+    fontSize: theme.typography.size.md,
+    color: theme.colors.textSecondary,
     textAlign: "center",
   },
   action: {
-    marginTop: spacing.lg,
+    marginTop: theme.spacing.lg,
   },
-});
+}));

@@ -1,5 +1,5 @@
-import { View, Text, Pressable, StyleSheet } from "react-native";
-import { colors, spacing, typography } from "@/design-system";
+import { View, Text, Pressable } from "react-native";
+import { StyleSheet } from "react-native-unistyles";
 
 interface Segment<T extends string> {
   key: T;
@@ -37,27 +37,27 @@ export function SegmentedControl<T extends string>({
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   container: {
     flexDirection: "row",
     borderBottomWidth: 1,
-    borderBottomColor: colors.borderLight,
+    borderBottomColor: theme.colors.borderLight,
   },
   segment: {
     flex: 1,
-    paddingVertical: spacing.md,
+    paddingVertical: theme.spacing.md,
     alignItems: "center",
   },
   segmentActive: {
     borderBottomWidth: 2,
-    borderBottomColor: colors.primary,
+    borderBottomColor: theme.colors.primary,
   },
   label: {
-    fontSize: typography.size.sm,
-    color: colors.textSecondary,
+    fontSize: theme.typography.size.sm,
+    color: theme.colors.textSecondary,
   },
   labelActive: {
-    color: colors.primary,
-    fontWeight: typography.weight.semibold,
+    color: theme.colors.primary,
+    fontWeight: theme.typography.weight.semibold,
   },
-});
+}));

@@ -1,8 +1,8 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { useState } from "react";
 import { Screen, StatusBadge, SegmentedControl } from "@/components/ui";
-import { colors, spacing, typography } from "@/design-system";
+import { StyleSheet } from "react-native-unistyles";
 
 type Segment = "resume" | "analyses" | "historique";
 
@@ -74,30 +74,32 @@ function HistoriqueContent() {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   header: {
-    padding: spacing.lg,
-    backgroundColor: colors.backgroundSecondary,
+    padding: theme.spacing.lg,
+    backgroundColor: theme.colors.backgroundSecondary,
     borderBottomWidth: 1,
-    borderBottomColor: colors.border,
+    borderBottomColor: theme.colors.border,
   },
   communeName: {
-    fontSize: typography.size.xl,
-    fontWeight: typography.weight.bold,
-    marginBottom: spacing.sm,
+    fontSize: theme.typography.size.xl,
+    fontWeight: theme.typography.weight.bold,
+    color: theme.colors.text,
+    marginBottom: theme.spacing.sm,
   },
   content: {
     flex: 1,
-    padding: spacing.lg,
+    padding: theme.spacing.lg,
   },
   contentTitle: {
-    fontSize: typography.size.lg,
-    fontWeight: typography.weight.semibold,
-    marginBottom: spacing.md,
+    fontSize: theme.typography.size.lg,
+    fontWeight: theme.typography.weight.semibold,
+    color: theme.colors.text,
+    marginBottom: theme.spacing.md,
   },
   contentText: {
-    fontSize: typography.size.sm,
-    color: colors.textSecondary,
-    lineHeight: typography.size.sm * typography.lineHeight.relaxed,
+    fontSize: theme.typography.size.sm,
+    color: theme.colors.textSecondary,
+    lineHeight: theme.typography.size.sm * theme.typography.lineHeight.relaxed,
   },
-});
+}));

@@ -1,11 +1,6 @@
-import { View, Text, StyleSheet } from "react-native";
-import {
-  colors,
-  spacing,
-  typography,
-  type StatusType,
-  statusEmoji,
-} from "@/design-system";
+import { View, Text } from "react-native";
+import { StyleSheet } from "react-native-unistyles";
+import { type StatusType, statusEmoji } from "@/design-system";
 
 interface StatusBadgeProps {
   status: StatusType;
@@ -21,17 +16,17 @@ export function StatusBadge({ status, label }: StatusBadgeProps) {
   );
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create((theme) => ({
   container: {
     flexDirection: "row",
     alignItems: "center",
   },
   emoji: {
-    fontSize: typography.size.md,
-    marginRight: spacing.sm,
+    fontSize: theme.typography.size.md,
+    marginRight: theme.spacing.sm,
   },
   label: {
-    fontSize: typography.size.sm,
-    color: colors.textSecondary,
+    fontSize: theme.typography.size.sm,
+    color: theme.colors.textSecondary,
   },
-});
+}));
