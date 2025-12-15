@@ -4,6 +4,18 @@
 
 This is an Expo/React Native mobile application. Prioritize mobile-first patterns, performance, and cross-platform compatibility.
 
+## Package Manager
+
+This project uses **Bun** as the package manager.
+
+```bash
+bun install              # Install dependencies
+bun add <package>        # Add a package (prefer npx expo install for Expo packages)
+bun run <script>         # Run a script from package.json
+```
+
+> **Note**: Always use `npx expo install <package>` for Expo-related packages to ensure version compatibility.
+
 ## Documentation Resources
 
 When working on this project, **always consult the official Expo documentation** available at:
